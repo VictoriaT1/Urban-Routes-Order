@@ -7,34 +7,22 @@ exports.config = {
         // 'path/to/excluded/files'
     ],
     maxInstances: 10,
-    headless: true,
+    headless: false,
     capabilities: [
         {
         maxInstances: 5,
         browserName: 'chrome',
-        acceptInsecureCerts: true,
-        'goog:chromeOptions': {
-            args: ['headless', 'disable-gpu']
-        }
-    },
-    {
-        maxInstances: 5,
-        browserName: 'firefox',
-        acceptInsecureCerts: true,
-        'moz:firefoxOptions': {
-            args: ['-headless']
-        }
+        acceptInsecureCerts: true
     }
 ],
     logLevel: 'error',
     bail: 0,
-    baseUrl: 'https://033b7a32-0a98-4b20-8e1b-f5d8ca0373ce.serverhub.practicum-services.com',
+    baseUrl: 'https://e213d8e2-77c5-4f73-86aa-fc999da890f6.serverhub.practicum-services.com',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
     services: [
         'chromedriver', 
-        'geckodriver', 
         'intercept', 
     ],
     framework: 'mocha',
@@ -42,5 +30,5 @@ exports.config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
-    },
+    }
 }
