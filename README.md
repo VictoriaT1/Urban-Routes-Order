@@ -13,3 +13,4 @@ test covers the full process of ordering a taxi including
 
 The test is runs in the chrome browser and passes successfully. The purpose of this project is to
 write code to automate the steps to order a taxi.
+Make sure to push changes: git add . git commit git push
