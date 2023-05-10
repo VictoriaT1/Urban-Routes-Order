@@ -1,4 +1,10 @@
 Project 8
+
+To set up the environment before creating the test is as follows: After linking Practicum account with GitHub, a repository will be created automatically. The repository name will be hm08-qa-us.
+
+The next step is to create a directory to store the project. 
+Next you will change the directory into the new projects folder and clone the repo using git clone git@github.com:username/hm08_qa_us.git. After cloning the repo, run npm install from the console into project folder. Then, in config.js replace the URL with the unique link generated for launching the server for Urban Grocers.
+
 In this project a test and steps are written to check the functionality of the Urban Routes App.
  All tests are written in the createAnOrder.e2e.js file located in the test/specs folder. The automated
 test covers the full process of ordering a taxi including
