@@ -12,5 +12,6 @@ test covers the full process of ordering a taxi including
 8. Waiting for the driver
 
 The test is runs in the chrome browser and passes successfully. The purpose of this project is to
-write code to automate the steps to order a taxi.
-Make sure to push changes: git add . git commit git push
+write code in javascript to automate the steps to order a taxi.
+
+To push changes: git add . git commit git push
