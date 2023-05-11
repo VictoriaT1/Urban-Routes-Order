@@ -1,6 +1,3 @@
-//const { $ } = require("webdriverio/build/commands/browser");
-//const { setValue } = require("webdriverio/build/commands/element");
-
 module.exports = {
     // Inputs
     fromField: '#from',
@@ -92,7 +89,7 @@ module.exports = {
         // Inputting card number
         const cardNumber = await $(this.cardNumber);
         await cardNumber.waitForDisplayed();
-        await cardNumber,setValue(1234567812345678);
+        await cardNumber.setValue(1234567812345678);
 
         // Inputting card code
         const cardCode = await $(this.cardCode);
@@ -114,6 +111,7 @@ module.exports = {
         await closePaymentMethodModalButton.waitForDisplayed();
         await closePaymentMethodModalButton.click();
 
+
 },
      
         orderBlanketAndHandkerchiefs: async function() {
@@ -121,6 +119,7 @@ module.exports = {
         await orderReqs.waitForDisplayed();
         await orderReqs.scrollIntoView();
         await orderReqs.click();
+        //Remove parent function which was unable to find the element
         const blanketSwitch = await $(this.blanketCheckbox);
         await blanketSwitch.waitForDisplayed();
         await blanketSwitch.click();
@@ -140,11 +139,12 @@ module.exports = {
         await waitForTheDriverButton.click();
 },
 
-        orderIceCream: async function() {
+        orderIceCream: async function(quantity) {
         const iceCreamCounter = await $(this.iceCreamContainer).parentElement().$(this.iceCreamCounter);
         await iceCreamCounter.scrollIntoView();
+        for (i = 0; i < quantity; i++) {
         await iceCreamCounter.click();
-        await iceCreamCounter.click();
+        }
         const iceCreamNumber = await $(this.iceCreamContainer).parentElement().$(this.iceCreamCount);
         return iceCreamNumber.getText(); 
     
