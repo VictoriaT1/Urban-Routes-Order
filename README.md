@@ -1,12 +1,18 @@
 Project 8
 
-To set up the environment before creating the test is as follows: After linking Practicum account with GitHub, a repository will be created automatically. The repository name will be hm08-qa-us.
+In this project, I developed JavaScript code using Visual Studio Code and utilized WebdriverIO for test automation to evaluate the ordering process of ordering a taxi on the Urban Routes web application. I employed the 'describe' and 'it' methods to structure the tests, incorporating JavaScript commands such as const, await, and expect. CSS and XPath locators were used to identify web elements for the tests. The test scenarios included setting the address, selecting the support plan, entering the phone number, adding a credit card, writing a message for the driver, ordering a blanket and handkerchiefs, ordering two ice creams, and waiting for the car search modal to appear. Comments were added to separate each test, and each test can be individually commented out to run separately if needed.
 
-The next step is to create a directory to store the project. 
-Next you will change the directory into the new projects folder and clone the repo using git clone git@github.com:username/hm08_qa_us.git. After cloning the repo, run npm install from the console into project folder. Then, in config.js replace the URL with the unique link generated for launching the server for Urban Routes.
+Pre Conditions
+
+1. Copy Urban Routes URL to the wdio.conf.js file in the hm08-qa-us folder
+2. Run "npm install" in your console in the hm08-qa-us folder
+3. Ensure WebdriverIO is installed
+
+To run tests
+Run "npm run wdio" in the console
 
 In this project a test and steps are written to check the functionality of the Urban Routes App.
- All tests are written in the createAnOrder.e2e.js file located in the test/specs folder. The automated
+All tests are written in the createAnOrder.e2e.js file located in the test/specs folder. The automated
 test covers the full process of ordering a taxi including
 1. Setting the address
 2. Selecting the supportive plan
