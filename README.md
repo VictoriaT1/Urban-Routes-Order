@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/ecf7108c-43e3-4555-8979-52d191c49132)
 Project 8
 
 In this project, I developed JavaScript code using Visual Studio Code and utilized WebdriverIO for test automation to evaluate the ordering process of ordering a taxi on the Urban Routes web application. I employed the 'describe' and 'it' methods to structure the tests, incorporating JavaScript commands such as const, await, and expect. CSS and XPath locators were used to identify web elements for the tests. The test scenarios included setting the address, selecting the support plan, entering the phone number, adding a credit card, writing a message for the driver, ordering a blanket and handkerchiefs, ordering two ice creams, and waiting for the car search modal to appear. Comments were added to separate each test, and each test can be individually commented out to run separately if needed.
